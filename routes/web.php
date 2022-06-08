@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/index','CotacaoController@index');
+Route::get('/cotacao','CotacaoController@cotacoes')->name('cotacoes');
+Route::post('/cotacao','CotacaoController@store')->name('cotacoes.store');
+
+
+Route::put('/cotacao', 'CotacaoController@update')->name('cotacoes.cotar');

@@ -12,10 +12,10 @@ services:
   db:
     image: mysql:5.7
     restart: always
-    ports: 
+    ports:
       - "3306:3306"
     environment:
-      MYSQL_DATABASE: 'db'
+      MYSQL_DATABASE: 'cotacaodb'
       MYSQL_ALLOW_EMPTY_PASSWORD: 1
       MYSQL_ROOT_PASSWORD: ""
     volumes:
